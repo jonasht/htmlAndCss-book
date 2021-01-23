@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Forms</title>
+
+		<img src="i.png" width="79" align="right">
+		<h1> Form example</h1>
+		<h4>exemplo de formulario</h4>	
+			
+		<hr>
+		
+	</head>
+	<body>
+		<form action="http://www.algo.com/review.php" method="get">
+			<fieldset>
+				<legend>Seus detalhes:</legend>
+				<label>Nome: <input type="text" name="Nome" size="30" maxlength="100"></label><br>
+				<label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br>
+			</fieldset><br>
+			<fieldset>
+				<legend>Sua revisão:</legend>
+				<p>
+					<label for="hear-about">Como ficou sabendso de nós?</label>
+					<select name="referrer" id="hear-about">
+
+						<option value="google">Google</option>
+						<option value="amigo">amigo</option>
+						<option value="proganda">proganda</option>
+                        <option value="outro">outro</option>
+                        
+					</select>
+				</p>
+				<p>
+					nos visitaria de novo?<br />
+					<label><input type="radio" name="rating" value="sim" /> sim </label>
+					<label><input type="radio" name="rating" value="não" /> não</label>
+					<label><input type="radio" name="rating" value="talvez" /> talvez </label>
+				</p>
+				<p>
+					<label for="comments">comente:</label><br />
+					<textarea rows="4" cols="40" id="comments"></textarea>
+				</p>
+				<label><input type="checkbox" name="subscribe" checked="checked" />nos assina por atualizações por email</label><br />
+				<input type="submit" value="assinar" />
+			</fieldset>
+		</form>
+	</body>
+</html>
